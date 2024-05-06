@@ -1,356 +1,99 @@
 [env]
 TERM = "xterm-256color"
 
-[font]
-size = 20
-
 [scrolling]
 history = 10000
 multiplier = 3
 
-[font.bold]
-family = "JetBrainsMono Nerd Font"
-style = "Bold"
-
-[font.bold_italic]
-family = "JetBrainsMono Nerd Font"
-style = "Bold Italic"
-
-[font.italic]
-family = "JetBrainsMono Nerd Font"
-style = "Italic"
-
-[font.normal]
-family = "JetBrainsMono Nerd Font"
-style = "Regular"
-
-
-[[keyboard.bindings]]
-action = "ResetFontSize"
-key = "Key0"
-mods = "Command"
-
-[[keyboard.bindings]]
-action = "IncreaseFontSize"
-key = "Equals"
-mods = "Command"
-
-[[keyboard.bindings]]
-action = "DecreaseFontSize"
-key = "Minus"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C\""
-key = "D"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C-"
-key = "D"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001C%"
-key = "Return"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C|"
-key = "Return"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001Cc"
-key = "T"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001CC"
-key = "T"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001CS"
-key = "N"
-mods = "Command"
-
-[[keyboard.bindings]]
-key = "N"
-mods = "Command|Shift"
-
-[keyboard.bindings.command]
-args = ["msg", "create-window", "-e", "/usr/local/bin/fish", "--login", "--command", "tmux-sessions --all"]
-program = "/usr/local/bin/alacritty"
-
-[[keyboard.bindings]]
-chars = "\u001Cx"
-key = "W"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C&"
-key = "W"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001Cd"
-key = "Q"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C[/"
-key = "F"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C[?"
-key = "F"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001CG"
-key = "G"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001CA"
-key = "A"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001CR"
-key = "R"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001CE"
-key = "R"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001CO"
-key = "P"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001CP"
-key = "P"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001Cz"
-key = "Z"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001CX"
-key = "Z"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = """
-\u001B:w
-"""
-key = "S"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = """
-\u001B:wa
-"""
-key = "S"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001Ch"
-key = "H"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001Cj"
-key = "J"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001Ck"
-key = "K"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001Cl"
-key = "L"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001Ch"
-key = "Left"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001Cj"
-key = "Down"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001Ck"
-key = "Up"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001Cl"
-key = "Right"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001CH"
-key = "H"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001CJ"
-key = "J"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001CK"
-key = "K"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001CL"
-key = "L"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001CH"
-key = "Left"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001CJ"
-key = "Down"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001CK"
-key = "Up"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001CL"
-key = "Right"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001C^"
-key = "B"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001Cp"
-key = "LBracket"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001Cn"
-key = "RBracket"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C1"
-key = "Key1"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C2"
-key = "Key2"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C3"
-key = "Key3"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C4"
-key = "Key4"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C5"
-key = "Key5"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C6"
-key = "Key6"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C7"
-key = "Key7"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C8"
-key = "Key8"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C9"
-key = "Key9"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C!"
-key = "B"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001C\u001B1"
-key = "Key1"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001C\u001B2"
-key = "Key2"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001C\u001B3"
-key = "Key3"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001C\u001B4"
-key = "Key4"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001C\u001B5"
-key = "Key5"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001C\u001B6"
-key = "Key6"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001C\u001B7"
-key = "Key7"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001C\u001B8"
-key = "Key8"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001C\u001B9"
-key = "Key9"
-mods = "Command|Shift"
+[font]
+size = 18
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+
+
+[keyboard]
+bindings = [
+  # ----- Change font size ----
+ { key= "Key0",     mods= "Command",       aCtion= "ResetFontSize" },
+ { key= "Equals",   mods= "Command",       aCtion= "InCreaseFontSize" },
+ { key= "Minus",    mods= "Command",       aCtion= "DeCreaseFontSize" },
+  # ----- new pane/taB/window -----
+ { key= "D",        mods= "Command",       Chars= "\u001C\""    },
+ { key= "D",        mods= "Command|Shift", Chars= "\u001C-"    },
+ { key= "Return",   mods= "Command",       Chars= "\u001C%"    }, # new horizontal pane with default shell
+ { key= "Return",   mods= "Command|Shift", Chars= "\u001C|"    }, # new horizontal pane with Commands menu
+ { key= "T",        mods= "Command",       Chars= "\u001Cc"    }, # new taB with default shell
+ { key= "T",        mods= "Command|Shift", Chars= "\u001CC"    }, # new taB with Commands menu
+ { key= "N",        mods= "Command",       Chars= "\u001CS"    }, 
+ { key= "N",        mods= "Command|Shift", command= { program= "/usr/local/bin/alacritty", args= ["msg", "create-window", "-e", "/usr/local/bin/fish", "--login", "--command", "tmux-sessions --all"] } },
+  # ----- Close pane/taB/window -----
+ { key= "W",        mods= "Command",       Chars= "\u001Cx"    }, # Close the pane
+ { key= "W",        mods= "Command|Shift", Chars= "\u001C&"    }, # Close the taB
+ { key= "Q",        mods= "Command",       Chars= "\u001Cd"    }, # Close the window
+  # ----- Copy mode -----
+ { key= "F",        mods= "Command",       Chars= "\u001C[/"   }, # enter vi Copy mode", and searCh from up to down
+ { key= "F",        mods= "Command|Shift", Chars= "\u001C[?"   }, # enter vi Copy mode", searCh from down to up
+ { key= "G",        mods= "Command",       Chars= "\u001CG"    }, # go to seleCted file and line
+
+  # ----- misC shortCuts -----
+ { key= "A",        mods= "Command",       Chars= "\u001CA"    }, # Useful Commands menux for tmux
+ { key= "R",        mods= "Command",       Chars= "\u001CR"    }, # run Command with Commands menu in right vertiCal
+ { key= "R",        mods= "Command|Shift", Chars= "\u001CE"    }, # run Command with Commands seleCtor in right vertiCal
+ { key= "P",        mods= "Command",       Chars= "\u001CO"    }, # toggle popup window
+ { key= "P",        mods= "Command|Shift", Chars= "\u001CP"    }, # go to the seleCted pane
+ { key= "Z",        mods= "Command",       Chars= "\u001Cz"    }, # zoom toggle of the Current pane
+ { key= "Z",        mods= "Command|Shift", Chars= "\u001CX"    }, # kill other panes
+ { key= "S",        mods= "Command",       Chars= """\u001B=w"""}, # Type <esCape>=w<enter> to save in vim or helix
+ { key= "S",        mods= "Command|Shift", Chars= """\u001B=wa"""}, # Type <esCape>=wa<enter> to save in vim or helix
+
+  # ----- navigate panes -----
+ { key= "H",        mods= "Command",       Chars= "\u001Ch"    }, # go to the pane left
+ { key= "J",        mods= "Command",       Chars= "\u001Cj"    }, # go to the pane aBove
+ { key= "K",        mods= "Command",       Chars= "\u001Ck"    }, # go to the pane Below
+ { key= "L",        mods= "Command",       Chars= "\u001Cl"    }, # go to the pane right
+ { key= "Left",     mods= "Command",       Chars= "\u001Ch"    },
+ { key= "Down",     mods= "Command",       Chars= "\u001Cj"    },
+ { key= "Up",       mods= "Command",       Chars= "\u001Ck"    },
+ { key= "Right",    mods= "Command",       Chars= "\u001Cl"    },
+
+  # ----- resize panes -----
+ { key= "H",        mods= "Command|Shift", Chars= "\u001CH"    }, # resize the Current pane left
+ { key= "J",        mods= "Command|Shift", Chars= "\u001CJ"    }, # resize the Current pane aBove
+ { key= "K",        mods= "Command|Shift", Chars= "\u001CK"    }, # resize the Current pane Below
+ { key= "L",        mods= "Command|Shift", Chars= "\u001CL"    }, # resize the Current pane right
+ { key= "Left",     mods= "Command|Shift", Chars= "\u001CH"    },
+ { key= "Down",     mods= "Command|Shift", Chars= "\u001CJ"    },
+ { key= "Up",       mods= "Command|Shift", Chars= "\u001CK"    },
+ { key= "Right",    mods= "Command|Shift", Chars= "\u001CL"    },
+
+  # ----- navigate taBs -----
+ { key= "B",        mods= "Command",       Chars= "\u001C^"    }, # BaCk to last taB
+ { key= "LBracket", mods= "Command",       Chars= "\u001Cp"    }, # go to previous taB
+ { key= "RBracket", mods= "Command",       Chars= "\u001Cn"    }, # go to next taB
+ { key= "Key1",     mods= "Command",       Chars= "\u001C1"    }, # go to taB 1..9
+ { key= "Key2",     mods= "Command",       Chars= "\u001C2"    },
+ { key= "Key3",     mods= "Command",       Chars= "\u001C3"    },
+ { key= "Key4",     mods= "Command",       Chars= "\u001C4"    },
+ { key= "Key5",     mods= "Command",       Chars= "\u001C5"    },
+ { key= "Key6",     mods= "Command",       Chars= "\u001C6"    },
+ { key= "Key7",     mods= "Command",       Chars= "\u001C7"    },
+ { key= "Key8",     mods= "Command",       Chars= "\u001C8"    },
+ { key= "Key9",     mods= "Command",       Chars= "\u001C9"    },
+
+  # ----- move panes -----
+ { key= "B",        mods= "Command|Shift", Chars= "\u001C!"    }, # Break the Current pane out of the window
+ { key= "Key1",     mods= "Command|Shift", Chars= "\u001C\u001B1"}, # move the Current pane to taB 1..9
+ { key= "Key2",     mods= "Command|Shift", Chars= "\u001C\u001B2"},
+ { key= "Key3",     mods= "Command|Shift", Chars= "\u001C\u001B3"},
+ { key= "Key4",     mods= "Command|Shift", Chars= "\u001C\u001B4"},
+ { key= "Key5",     mods= "Command|Shift", Chars= "\u001C\u001B5"},
+ { key= "Key6",     mods= "Command|Shift", Chars= "\u001C\u001B6"},
+ { key= "Key7",     mods= "Command|Shift", Chars= "\u001C\u001B7"},
+ { key= "Key8",     mods= "Command|Shift", Chars= "\u001C\u001B8"},
+ { key= "Key9",     mods= "Command|Shift", Chars= "\u001C\u001B9"},
+]
 
 [shell]
 args = ["--login", "--command", "/opt/homebrew/bin/tmux new-session -A -D -s main"]
